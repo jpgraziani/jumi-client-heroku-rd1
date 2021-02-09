@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner component renders a .Banner by default 1`] = `
+<div
+  className="banner"
+>
+  <h1 />
+  <p />
+  <div />
+</div>
+`;
+
+exports[`Footer component renders a .Banner by default 1`] = `
+<section
+  className="footer-container"
+>
+  <div
+    className="nav-footer"
+  >
+    <Link
+      className="footerLink"
+      replace={false}
+      to="/"
+    >
+      home
+    </Link>
+    <Link
+      className="footerLink"
+      replace={false}
+      to="/recipes"
+    >
+      recipes
+    </Link>
+  </div>
+  <br />
+  <div>
+    <h6
+      className="end-quote"
+    >
+      exploring desert life on the west coast
+    </h6>
+  </div>
+</section>
+`;
+
+exports[`Footer component renders a .Footer by default 1`] = `
+<section
+  className="footer-container"
+>
+  <div
+    className="nav-footer"
+  >
+    <Link
+      className="footerLink"
+      replace={false}
+      to="/"
+    >
+      home
+    </Link>
+    <Link
+      className="footerLink"
+      replace={false}
+      to="/recipes"
+    >
+      recipes
+    </Link>
+  </div>
+  <br />
+  <div>
+    <h6
+      className="end-quote"
+    >
+      exploring desert life on the west coast
+    </h6>
+  </div>
+</section>
+`;

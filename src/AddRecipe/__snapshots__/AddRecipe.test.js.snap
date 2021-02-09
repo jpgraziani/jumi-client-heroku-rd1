@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddRecipe component renders the complete form 1`] = `
+<section
+  className="AddNote"
+>
+  <h2>
+    Create a recipe
+  </h2>
+  <RecipeForm
+    onSubmit={[Function]}
+  >
+    <div
+      className="field"
+    >
+      <label
+        htmlFor="recipe-name-input"
+      >
+        Name
+      </label>
+      <input
+        id="recipe-name-input"
+        name="recipe-name"
+        type="text"
+      />
+    </div>
+    <div
+      className="field"
+    >
+      <label
+        htmlFor="ingredients"
+      >
+        ingredients
+      </label>
+      <textarea
+        id="ingredients"
+        name="ingredients"
+      />
+    </div>
+    <div
+      className="field"
+    >
+      <label
+        htmlFor="recipe-content-input"
+      >
+        directions
+      </label>
+      <textarea
+        id="recipe-content-input"
+        name="recipe-content"
+      />
+    </div>
+    <div
+      className="field"
+    >
+      <label
+        htmlFor="main_protein"
+      >
+        main protein
+      </label>
+      <input
+        id="main_proteins"
+        name="main_protein"
+        type="textr"
+      />
+    </div>
+    <div
+      className="field"
+    >
+      <label
+        htmlFor="calories"
+      >
+        calories
+      </label>
+      <input
+        id="calories"
+        name="calories"
+        type="number"
+      />
+    </div>
+    <div
+      className="field"
+    >
+      <label
+        htmlFor="protein"
+      >
+        protein
+      </label>
+      <input
+        id="protein"
+        name="protein"
+        type="number"
+      />
+    </div>
+    <div
+      className="buttons"
+    >
+      <button
+        type="submit"
+      >
+        Add recipe
+      </button>
+    </div>
+  </RecipeForm>
+</section>
+`;

@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #ffffff; /* changeed color */
+  --mainWhite: #ffffff; /* changeed color */
+  --offWhite: #fcfcfc; /* changeed color */
+  --mainBlack: #6a6a6a; /* changeed color */
+  --mainGrey: #131313; /* changeed color */
+  --lightGreen: #e1e1e1;
+  --darkGrey: #2a2a2a;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 3px;
+}
+
+body {
+  padding-top: 66px;
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 1em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+h4 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.25em;
+}
+
+hr {
+  /* width: 75%; */
+  height: 5px;
+  margin: 0 auto 1.5rem auto;
+  background: var(--mainBlack);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:active, a:visited {
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.hrVertical {
+  height: 4rem;
+  width: 2px;
+  padding: 0;
+  margin: auto 0;
+  background: var(--mainBlack);
+}
+
+.hrThin {
+  margin-top: 2rem;
+  height: 3px;
+}
+
+.btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainGrey);
+  background: var(--primaryColor);
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: var(--mainTransition);
+  -moz-transition: var(--mainTransition);
+  -ms-transition: var(--mainTransition);
+  -o-transition: var(--mainTransition);
+}
+.btn-primary:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+
+.black-btn {
+  background: var(--main);
+  border: 3px solid black;
+}
+
+.black-btn:hover {
+  color: lightgray;
+  border: 3px solid lightgray;
+}
+
+.loading {
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 3rem;
+}
+.error {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+.logo {
+  width: 150px;
+}
+
+/* Hero */
+.defaultHero,
+.recipesHero,
+.contactHero {
+  min-height: calc(100vh - 500px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recipesHero {
+  min-height: 60vh;
+}
+
+.contactHero {
+  min-height: 60vh;
+}
+/* End of Hero */
+
+/* featured recipes */
+
+#featured-header {
+  margin-bottom: 1.75rem;
+}
+
+.RecipeList {
+  padding: 5rem 0;
+}
+.RecipeList {
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 40px;
+}
+@media screen and (min-width: 776px) {
+  .RecipeList {
+    width: 90vw;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  }
+}
+@media screen and (min-width: 992px) {
+  .RecipeList {
+    width: 95vw;
+    max-width: 1170px;
+  }
+}
+/* end pf featured recipes */
+
+.recipe {
+  /* box-shadow: var(--lightShadow); */
+  transition: var(--mainTransition);
+}
+
+
+.img-container {
+  position: relative;
+}
+
+.recipe-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: rgba(0, 0, 0, 2); */
+  color: var(--mainWhite);
+  padding: 0.3rem 0.6rem 0.5rem;
+  /* border-bottom-right-radius: 1rem; */
+  font-size: 0.5rem;
+  text-align: center;
+  transition: var(--mainTransition);
+}
+.recipe-top h6 {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: var(--mainSpacing);
+}
+.recipe-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(0);
+  transition: all 0.3s linear;
+}
+
+.recipe-info {
+  background: lightgray;
+  text-transform: capitalize;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: .75rem;
+  letter-spacing: var(--mainSpacing);
+}
+/* end of recipe  */

@@ -1,0 +1,64 @@
+.footer-container {
+  width: 100%;
+  height: 30vh;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-column-gap: 30px;
+  text-align: center;
+  background-color: var(--lightGreen);
+}
+
+.footerLink {
+  padding: 0 .5rem;
+}
+
+.nav-footer a {
+  text-decoration: none;
+  color: var(--mainBlack);
+  transition: var(--mainTransition);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: var(--mainSpacing);
+}
+
+.end-quote {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: var(--mainSpacing);
+}
+/* end of footer */
+
+.directions li {
+  display: flex;
+}
+
+.ingredients li {
+  display: flex;
+}
+
+.ingredients article {
+  margin-left: 10px;
+}
+
+.directions article {
+  margin-left: 10px;
+}
+
+.directions span {
+  padding-top: 2px;
+}
+
+.iconCaret {
+  position: relative;
+  top: 2px;
+}
+
+button {
+  appearance: none;
+}
+
+textarea, select, input, button { 
+  outline: none; 
+}
